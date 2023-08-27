@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>文档网站</title>
+  <link rel="icon" href="_media/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_docsify@4_lib_themes_vue.css">
+  <link 
+    rel="stylesheet"
+    href="css/cdn.jsdelivr.net_npm_docsify-darklight-theme@latest_dist_style.min.css"
+    type="text/css"
+/>
+</head>
+
+<body>
+  <div id="app">Loading ...</div>
+  <script>
+    window.$docsify = {
+      name: '文档网站',
+      repo:'true',
+      corner: {
+        url: "/",
+        // you can set the image link here  
+        icon: "_media/1.gif",
+        // the size of the image  
+        width: 80,
+        height: 80
+      },
+      loadSidebar: true,
+      coverpage: true,
+      search: [
+        '/',
+        '/home/',
+        '/about/',
+      ],
+      footer: {
+        copy: '写点屎山代码。 —— <a href="#" target="">程酱</a><br/><br/>',
+        pre: '<hr/>',
+        style: 'text-align: left;',
+      },//添加页脚
+      // 完整配置参数
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto', // or 'auto'
+        placeholder: 'Type to search',
+
+        // 支持本地化
+        placeholder: {
+          '/': '搜索',
+        },
+
+        noData: 'No Results!',
+
+        // 支持本地化
+        noData: {
+          '/': '找不到结果',
+        },
+
+        // 搜索标题的最大层级, 1 - 6
+        depth: 1,
+
+        hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
+
+        // 避免搜索索引冲突
+        // 同一域下的多个网站之间
+        namespace: 'website-1',
+
+        // 使用不同的索引作为路径前缀（namespaces）
+        // 注意：仅适用于 paths: 'auto' 模式
+        //
+        // 初始化索引时，我们从侧边栏查找第一个路径
+        // 如果它与列表中的前缀匹配，我们将切换到相应的索引
+        pathNamespaces: ['/'],
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="js/cdn.jsdelivr.net_npm_docsify@4"></script>
+  <script src="js/search.min.js"></script>
+  <!-- 添加页脚 -->
+  <script src="js/footer-enh.min.js"></script>
+  <!-- 主题切换 -->
+  <script src="js/cdn.jsdelivr.net_npm_docsify-darklight-theme@latest_dist_index.min.js" type="text/javascript" ></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-corner/dist/docsify-corner.js"></script>
+</body>
+
+</html>
